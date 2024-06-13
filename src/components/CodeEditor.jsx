@@ -2,8 +2,7 @@ import Editor from "@monaco-editor/react";
 
 import React from 'react'
 
-const CodeEditor = () => {
-    const code = "var message = 'Monaco Editor!' \nconsole.log(message);";
+const CodeEditor = ({code, change}) => {
     return (
         <Editor
             height="80vh"
@@ -18,6 +17,7 @@ const CodeEditor = () => {
                 autoClosingBrackets: true,
                 minimap: { scale: 10 }
             }}
+            onChange={change}
         />
     );
 }

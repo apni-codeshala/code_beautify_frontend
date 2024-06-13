@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Editor from './components/Editor';
+import Convertor from './components/Convertor';
 
 const appRouter = createBrowserRouter([
 	{
@@ -14,6 +15,10 @@ const appRouter = createBrowserRouter([
 	{
 		path: '/editor',
 		element: <Editor />
+	},
+	{
+		path: '/convertor',
+		element: <Convertor />
 	}
 ])
 
